@@ -12,6 +12,7 @@
     --navy-blue: #2e2f42;
     --cloud-color: #f4f4fd;
     --trans: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --bgtrans: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 /* .page-header{
@@ -446,7 +447,8 @@ img {
     width: 100%;
     border-color: #4d5ae5;
     border-radius: 50%;
-    transition: var(--trans);
+    transition: var(--bgtrans);
+    background-color: #4d5ae5;
 }
 
 .social-link:hover,
@@ -476,7 +478,7 @@ img {
     border-top: none;
     text-align: left;
     letter-spacing: 0.02em;
-    transition: box-shadow var(--trans);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-card:hover {
@@ -605,6 +607,7 @@ img {
 .social-item {
     width: 40px;
     height: 40px;
+    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .media-link {
@@ -615,7 +618,7 @@ img {
     height: 100%;
     background-color: #4d5ae5;
     border-radius: 50%;
-    transition: background-color var(--trans);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-link:hover,
