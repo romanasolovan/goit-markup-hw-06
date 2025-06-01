@@ -173,6 +173,7 @@ img {
     margin-top: 20px;
     bottom: -1px;
     transform: translateY(100%);
+    transition: var(--trans);
 }
 
 /* CONTACTS SECTION */
@@ -182,6 +183,11 @@ img {
     justify-content: space-between;
     gap: 40px;
 }
+
+.contact-link {
+    transition:var(--trans);
+}
+
 /* GENERAL SETTINGS */
 
 .section {
@@ -223,15 +229,13 @@ img {
 .hero-section {
     margin: 0 auto;
     padding: 188px 0;
-    background-color: #2e2f42;
+    background-color:var(--trans);
     max-width: 1440px;
-    background-image: linear-gradient(to right, 
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-    url(../images/hero/hero-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(/images/hero/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
 }
 
 
@@ -271,6 +275,7 @@ img {
     padding: 16px 32px 16px 32px;
     border-radius: 4px;
     border: none;
+    transition: background-color var(--trans)
 }
 
 .action-btn:hover,
@@ -398,6 +403,7 @@ img {
     text-align: center;
 }
 
+
 /* social links for team members */
 
 .social-list-team {
@@ -426,11 +432,20 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    width: 40px;
+    height: 100%;
+    width: 100%;
+    border-color: #4d5ae5;
+    border-radius: 50%;
 }
 
+.social-link:hover,
+.social-link:focus {
+    background-color: #404bbf;
+}
 
+.team-icon {
+    fill: #f4f4fd;
+}
 
 /* PORTFOLIO SECTION */
 
@@ -450,11 +465,16 @@ img {
     border-top: none;
     text-align: left;
     letter-spacing: 0.02em;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--trans);
 }
 
 .port-card:hover {
-    background-color: #4d5ae5;
+    box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
+    /* background-color: #4d5ae5; */
 }
 
 .port-card:hover .overlay-text {
@@ -544,9 +564,9 @@ img {
 }
 
 .footer-text {
+    letter-spacing: 0.02em;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #f4f4fd;
     width: 264px;
 }
@@ -584,6 +604,7 @@ img {
     height: 100%;
     background-color: #4d5ae5;
     border-radius: 50%;
+    transition: background-color var(--trans);
 }
 
 .media-link:hover,
@@ -607,4 +628,8 @@ img {
     gap: 16px;
     width: 208px;
     text-align: left;
+}
+
+.media-image {
+    fill: #f4f4fd;
 }
