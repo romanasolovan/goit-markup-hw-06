@@ -731,7 +731,7 @@ img {
 /* MODAL WINDOW */
 
 .modal-overlay {
-    /* background-color: var(--navy-blue-modal); */
+    background-color: var(--navy-blue-modal);
     position: fixed;
     top: 0;
     left: 0;
@@ -742,8 +742,8 @@ img {
     justify-content: center;
     align-items: center;
     transition: 
-    opasity 250ms var(--stf)
-    visibility 250ms var(--stf);
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
     opacity: 0;
 }
@@ -767,6 +767,7 @@ img {
     background-color: var(--dairy);
     padding: 72px 24px 24px 24px;
     transition: transform 250ms var(--stf);
+    border-radius: 4px;
 }
 
 .form-modal {
@@ -800,8 +801,8 @@ img {
     padding: 0;
     cursor: pointer;
     transition: 
-    var(--bgtrans)
-    border 250ms var(--stf);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button .close-icon {
@@ -924,9 +925,9 @@ img {
     border-radius: 2px;
     border: 1px solid var(--navy-blue-modal);
     transition: 
-    var(--bgtrans)
-    border 250ms var(--stf)
-    fill 250ms var(--stf);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
