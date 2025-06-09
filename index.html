@@ -31,7 +31,7 @@
         <div class="container header-container">
             <nav class="site-nav">
                 <a class="logo" href="./index.html">Web<span>Studio</span></a>
-                <button type="mobile-menu-btn" class="mobile-menu-btn">
+                <button type="button" class="mobile-menu-btn">
                     <svg class="icon-mobile-menu" width="24" height="24">
                         <use href="./images/icons-mobile.svg#icon-mobile-menu"></use>
                     </svg>
@@ -59,8 +59,7 @@
                     </li>
                 </ul>
             </address>
-            <!-- <div class="mobile-menu-cointainer">
-            </div> -->
+
         </div>
     </header>
 
@@ -534,9 +533,9 @@
     </footer>
 
     <!-- MODAL WINDOW -->
-    <div class="modal-overlay">
+    <div class="backdrop">
         <div class="modal">
-            <button class="close-button" type="button">
+            <button class="close-button-modal" type="button">
                 <svg class="close-icon" width="8" height="8">
                     <use href="./images/icons-modal.svg#icon-close-button"></use>
                 </svg>
@@ -588,6 +587,56 @@
                 </div>
                 <button class="form-button" type="submit">Send</button>
             </form>
+        </div>
+    </div>
+
+    <!-- Mobile modal -->
+    <div class="mobile-modal">
+        <div class="mobile-menu">
+            <button class="mobile-btn-close" type="button">
+                <svg class="mobile-btn-icon" width="8" height="8">
+                    <use href="./images/icons-modal.svg#icon-close-button"></use>
+                </svg>
+            </button>
+            <nav class="nav-mobile">
+                <ul class="list-mobile">
+                    <li class="list-mobile-item"><a href="/" class="mob-link mob-link-accent">Studio</a></li>
+                    <li class="list-mobile-item"><a href="/" class="mob-link">Portfolio</a></li>
+                    <li class="list-mobile-item"><a href="/" class="mob-link">Contacts</a></li>
+                </ul>
+                <address class="mob-address">
+                    <ul class="mob-list-address">
+                        <li class="mob-address-item"><a href="tel:+110001111111" class="mob-address-link acnt-color">+11
+                                (000)
+                                111-11-11</a></li>
+                        <li class="mob-address-item"><a href="mailto:info@devstudio.com"
+                                class="mob-address-link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="mob-social-list">
+                    <li class="mob-social-item"><a href="/" class="mob-social-link">
+                            <svg class="mob-icon" width="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li class="mob-social-item"><a href="/" class="mob-social-link">
+                            <svg class="mob-icon" width="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+                    <li class="mob-social-item"><a href="/" class="mob-social-link">
+                            <svg class="mob-icon" width="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li class="mob-social-item"><a href="/" class="mob-social-link">
+                            <svg class="mob-icon" width="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </body>
