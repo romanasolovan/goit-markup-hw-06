@@ -1,8 +1,8 @@
 /* Variables */
 
 :root {
-  --font-family: "Roboto", sans-serif;
-  --second-family: "Raleway", sans-serif;
+  --font-family: 'Roboto', sans-serif;
+  --second-family: 'Raleway', sans-serif;
   --main-size: 16px;
   --main-line-height: 1.5;
   --main-letter-spacing: 0.02em;
@@ -180,7 +180,7 @@ img {
 /* LOGO */
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #4d5ae5;
@@ -199,7 +199,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .logo {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #4d5ae5;
@@ -221,6 +221,7 @@ img {
 
 .mobile-menu-btn {
   background-color: transparent;
+  flex-direction: column;
   border: none;
   display: flex;
   justify-content: center;
@@ -281,7 +282,7 @@ img {
 } */
 
 .accent-nav-link::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   background-color: #404bbf;
@@ -539,9 +540,6 @@ img {
   .feature-subtitle {
     text-align: left;
   }
-  /* .subtitle {
-    text-align: left;
-  } */
 
   .subtitle-text {
     text-align: left;
@@ -611,18 +609,22 @@ img {
 .team-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   row-gap: 72px;
 }
 
 .team-members {
+  max-width: 100%;
+  height: 428px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.team-members img {
+.team-image {
   width: 100%;
+  /* align-items: center; */
 }
 
 .member-content {
@@ -1107,7 +1109,17 @@ img {
   opacity: 0;
 }
 
+.backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-modal.is-open {
   opacity: 1;
   pointer-events: auto;
 }
@@ -1124,10 +1136,10 @@ img {
   min-height: 640px;
   transition: transform 250ms var(--stf);
   border-radius: 4px;
-  padding: 8px 16px 8px 16px;
+  padding: 72px 16px 24px 16px;
 }
 
-@media screen and (min-width: 768px), and (min-width: 1158px) {
+@media screen and (min-width: 768px), screen and (min-width: 1158px) {
   .modal {
     width: 408px;
     min-height: 584px;
@@ -1144,7 +1156,7 @@ img {
   background-color: rgba(252, 252, 252, 1);
 }
 
-@media screen and (min-width: 768px), and (min-width: 1158px) {
+@media screen and (min-width: 768px), screen and (min-width: 1158px) {
   .form-modal {
     top: 80px;
     left: 516px;
@@ -1240,7 +1252,7 @@ img {
 
 .input-container {
   position: relative;
-  border: 1px solid var(--navy-blue-modal);
+  /* border: 1px solid var(--navy-blue-modal); */
   border-radius: 4px;
   width: 256px;
   height: 40px;
@@ -1248,7 +1260,7 @@ img {
   /* margin-top: 4px; */
 }
 
-@media screen and (min-width: 768px), and (min-width: 1158px) {
+@media screen and (min-width: 768px), screen and (min-width: 1158px) {
   .input-container {
     width: 360px;
   }
@@ -1349,7 +1361,7 @@ img {
   margin-right: 8px;
 }
 
-input[type="checkbox"]:checked + .checkbox-label .checkbox-frame {
+input[type='checkbox']:checked + .checkbox-label .checkbox-frame {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
@@ -1372,7 +1384,7 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-frame {
   color: white;
   border: none;
   font-size: 16px;
-  font-family: "Roboto" sans-serif;
+  font-family: 'Roboto' sans-serif;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -1410,7 +1422,8 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-frame {
 .mobile-menu {
   position: relative;
   background-color: var(--white);
-  padding: 72px 16px 40px 16px;
+  padding: 24px 24px 40px 16px;
+  /* padding: 72px 16px 40px 16px; */
   width: 320px;
   min-height: 640px;
   top: 50%;
@@ -1443,7 +1456,7 @@ input[type="checkbox"]:checked + .checkbox-label .checkbox-frame {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  /* margin-top: 168px; */
+  margin-top: 72px;
 }
 
 .mob-link {
