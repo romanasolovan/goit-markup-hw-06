@@ -515,6 +515,7 @@ img {
 }
 
 .feature-sub-text {
+  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -1433,6 +1434,7 @@ input[type='checkbox']:checked + .checkbox-label .checkbox-frame {
 
 .mobile-btn-close {
   position: absolute;
+  border: none;
   top: 24px;
   right: 24px;
   border-radius: 50%;
@@ -1441,7 +1443,7 @@ input[type='checkbox']:checked + .checkbox-label .checkbox-frame {
   align-items: center;
   width: 24px;
   height: 24px;
-  fill: var(--grey);
+  fill: var(--cornflower);
   transition: background-color 250ms var(--stf), border 250ms var(--stf);
 }
 
