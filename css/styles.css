@@ -1139,11 +1139,17 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 80px;
-  left: 516px;
+  /* top: 80px;
+  left: 516px; */
   background-color: rgba(252, 252, 252, 1);
 }
 
+@media screen and (min-width: 768px), and (min-width: 1158px) {
+  .form-modal {
+    top: 80px;
+    left: 516px;
+  }
+}
 .input {
   /* width: 360px; */
   margin-bottom: 8px;
@@ -1240,6 +1246,12 @@ img {
   height: 40px;
   /* width: 100%; */
   /* margin-top: 4px; */
+}
+
+@media screen and (min-width: 768px), and (min-width: 1158px) {
+  .input-container {
+    width: 360px;
+  }
 }
 
 .input-icon {
