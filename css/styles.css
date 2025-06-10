@@ -1443,7 +1443,7 @@ input[type='checkbox']:checked + .checkbox-label .checkbox-frame {
   align-items: center;
   width: 24px;
   height: 24px;
-  fill: var(--cornflower);
+  fill: var(--grey);
   transition: background-color 250ms var(--stf), border 250ms var(--stf);
 }
 
